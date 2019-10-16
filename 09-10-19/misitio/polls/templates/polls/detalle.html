@@ -1,0 +1,27 @@
+<style type="text/css">
+	
+	body{background: cyan;}
+
+</style>
+
+{% if pregunta %}
+
+    <h1>{{ pregunta.descripcion }}</h1>
+    
+    <br>    
+
+    <a href="/encuestas/">Volver</a>
+
+    <!--
+    <form action="/encuestas/">
+    	<input type="submit" value="Volver">
+    </form>
+	-->
+
+	<!--<input type="button" onclick="history.back()" value="Volver" >-->
+
+{% else %}
+
+    <p>No hay pregunta.</p>
+
+{% endif %}
